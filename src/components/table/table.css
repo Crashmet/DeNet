@@ -1,0 +1,118 @@
+:root {
+  --text-gray:#676767;
+  --text-medium:#232323;
+  --text-bold:#000000;
+  --text-white:white;
+  --text-disabled:ACADB5;
+  --green: #32A143;
+  --yellow: #FFD600;
+  --red: #ED4848;
+  --btn-normal-bg:#F6F6F6;
+  --btn-hover-bg:#EBEBEB;
+  --btn-hover-opasity-bg: 0.7;
+  --btn-click-bg:#EBEBEB;
+  --background-page:-bg #F5F5F5;
+}
+
+th.gridjs-th{
+  background-color: var(--text-white) ;
+  border: 0;
+}
+
+.gridjs-wrapper {
+  box-shadow: none;
+}
+
+.gridjs-tr:hover> td {
+  background: #F7F7F7;
+}
+
+button.gridjs-sort-neutral{
+  position: absolute;
+  background-image:none;
+  bottom: 50%;
+  right: 15%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid;
+  border-color: transparent transparent var(--text-gray) var(--text-gray);
+  transform: rotate(-45deg);
+}
+
+button.gridjs-sort-desc{
+  position: absolute;
+  background-image: none;
+  bottom: 50%;
+  right: 15%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid;
+  border-color: transparent transparent var(--text-gray) var(--text-gray);
+  transform: rotate(-45deg);
+
+}
+
+button.gridjs-sort-asc{
+  position: absolute; 
+  background-image: none;
+  bottom: 40%;
+  right: 15%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid;
+  border-color: transparent transparent var(--text-gray) var(--text-gray);
+  transform: rotate(-225deg);
+}
+
+th.gridjs-th-sort:focus, th.gridjs-th-sort:hover{  
+  background-color: var(--text-white);
+}
+
+th.gridjs-th-sort .gridjs-th-content:focus, th.gridjs-th-sort .gridjs-th-content:hover{ 
+  background: linear-gradient(to left, var(--yellow), var(--yellow) 100%);
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+}
+
+td.gridjs-td:not(:last-child){
+  font-weight: 500;
+  color:var(--text-medium);
+}
+
+
+/* status-block */
+.block_status{
+  max-width: 140px;
+  min-height: 30px;
+  padding: 5px 20px;
+  color:var(--text-medium);
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align:center
+}
+
+.new__block_status {
+  border:2px solid var(--green);
+}
+
+.solved__block_status{
+  background-color: var(--green);
+}
+
+.review__block_status{
+  border:2px solid var(--yellow);
+}
+
+.progress__block_status{
+  background-color: var(--yellow);
+}
+
+.rejected__block_status{
+  background-color: var(--red);
+}
+
+.deferred__block_status{
+  border:2px solid var(--red);
+}
+
