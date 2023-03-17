@@ -14,6 +14,38 @@
   --background-page:-bg #F5F5F5;
 }
 
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -2%;
+  background: var(--yellow);
+  height: 2px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
 /* montserrat-300 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -190,12 +222,13 @@ button {
   color: var(--text-gray);
 }
 
-/* *:focus-visible {
-  outline: 1px solid var(--purple);
-} */
+*:focus-visible {
+  outline: 1px solid var(--yellow);
+}
 
 button {
   cursor: pointer;
+  border:none;
 }
 
 a {
@@ -216,7 +249,30 @@ img {
   padding: 0 281px;
 }
 
-/* main-btn */
+.main-btn{
+  width: 242px;
+  height: 40px;
+  background: #FFD600;
+  border-radius: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-variant: all-small-caps;
+  color: var(--text-medium);
+}
+
+.main-btn:hover{
+  color: var(--text-white);
+  box-shadow: 0px 6px 30px rgba(255, 214, 0, 0.52);
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease-in;
+}
+
+.main-btn_disabled{
+  background: var(--btn-normal-bg);
+  color:#ACADB5;
+  transition: all 0.3s ease-in;
+}
 
 /* Header  */
 
@@ -294,44 +350,140 @@ img {
   background: none;
   border: none;
 }
-.header-item__logo {
+
+
+/* main */
+
+/* navigation */
+
+.nav__container{
+  margin-bottom: 40px;
 }
 
-.nav {
-
+.nav__row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav__container {
-}
 .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav__item {
+
+.nav__item{
+  letter-spacing: 0.05em;
+  cursor: pointer;
 }
+
 .nav__item_bugs {
+  margin-right: 34px;
+  font-weight: 600;
+  color: var(--text-bold);
 }
+
+.nav__item_bugs:hover {
+  border-bottom: 1px solid var(--yellow);
+}
+
+
 .nav__item_suggestions {
+  margin-right: 80px;
+  text-transform: uppercase;
 }
+
 .nav__item_tracker {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-bold);
 }
-.nav__item_tracker-icon {
+
+.nav__item_tracker::before {
+  content: '';
+  background: url('../img/spider.svg') 50% no-repeat ;
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
 }
-.nav__item_q {
+
+.nav__item_tracker:hover::before  {
+  content: '';  
+  background: url('../img/spider-light.svg') 50% no-repeat ;
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  transition: background 0.3s ease-in-out;
 }
-.nav__item_q-btn {
+
+.login__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav__item_address {
+
+.login__item {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  min-height: 43px;
+  background: var(--btn-normal-bg);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
-.nav__item_out {
+
+.login__item:hover{
+  background: var(--btn-hover-bg);
+  transition: all 0.3 ease-in;
 }
-.nav__item_out-btn {
+
+.login__item:active{
+  background: var(--btn-hover-bg);
+  opacity: 0.7;
+  transition: all 0.3 ease-in;
 }
-.add-bug {
+
+.login__item_q {
+  margin-right: 25px;
+  min-width: 39px;
+  background: var(--btn-normal-bg);
+  text-align: center;
 }
+.login__item_address {
+  margin-right: 12px;
+  padding: 8px 15px;
+
+}
+
+.login__item_address:hover {
+  opacity: var(--btn-hover-opasity-bg);
+}
+
+
+.login__item_out{
+  min-width: 39px;
+  background: var(--btn-normal-bg);
+  text-align: center;
+}
+
+/* .add-bug */
+
+
 .add-bug__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .add-bug__title_left {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--text-medium);
 }
 .add-bug__btn_right {
+  
 }
 .bug-list {
 }
