@@ -548,13 +548,6 @@ img {
 }
 
 
-/* .blur */
-
-.blur{
-  filter: blur(10px);
-}
-
-
 /* admind desc  */
  
 .admin-list {
@@ -727,4 +720,11 @@ img {
   max-height: 44px;
   background: #FFD600;
   border-radius: 0px 10px 10px 0px;
+}
+
+
+/* .blur */
+
+.blur{
+  filter: blur(10px);
 }
