@@ -551,9 +551,7 @@ img {
 /* .blur */
 
 .blur{
-  background: rgba(0, 0, 0, 0.2);
   filter: blur(10px);
-  
 }
 
 
