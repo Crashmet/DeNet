@@ -213,7 +213,7 @@ img {
 }
 
 .container {
-  max-width: 945px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -495,7 +495,7 @@ img {
 /* bug-list   */
 
 .bug-list__container {
-  max-width: 970px;
+  max-width: 1401347p0px;
 }
 
 
@@ -541,41 +541,4 @@ img {
 .sort-table__item.active::after {
   bottom: 40%;
   transform: rotate(-225deg);
-}
-
-.table__item_id {
-}
-
-.table__item_bug {
-}
-
-.sort-table__item_app {
-  
-}
-
-.sort-table__item_status {
-}
-
-.sort-table__item_created {
-}
-
-.bug-list__list {
-}
-.bug-list__item {
-}
-.bug-list-item__list {
-}
-.bug-list-item__item {
-}
-.bug-list-item__item_id {
-}
-.bug-list-item__item_bug {
-}
-.bug-list-item__item_app {
-}
-.bug-list-item__item_status {
-}
-.item-status {
-}
-.bug-list-item__item_created {
 }

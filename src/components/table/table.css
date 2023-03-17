@@ -75,7 +75,7 @@ th.gridjs-th-sort .gridjs-th-content:focus, th.gridjs-th-sort .gridjs-th-content
   background-repeat: repeat-x;
 }
 
-td.gridjs-td:not(:last-child){
+td.gridjs-td{
   font-weight: 500;
   color:var(--text-medium);
 }
@@ -116,3 +116,38 @@ td.gridjs-td:not(:last-child){
   border:2px solid var(--red);
 }
 
+
+/* dot_status */
+
+.dot_status{
+  color:var(--text-medium);
+}
+
+.dot_status>span{
+  display: inline-block;
+  margin-right: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--red)
+}
+
+.critical__dot_status>span{
+  background-color: var(--red)
+}
+
+.medium__dot_status>span{
+  background-color: var(--yellow)
+}
+
+.low__dot_status>span{
+  background-color: var(--green)
+}
+
+.high__dot_status>span{
+  background-color: var(--red)
+}
+
+.critical__dot_status>span{
+  background-color: var(--red)
+}
