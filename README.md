@@ -1,4 +1,4 @@
-# Тестовая работа для Стажировки в DaNet
+# Тестовая работа DaNet
 [Users_version](https://crashmet.github.io/Test_for_DeNet/src/users_version.html)
 
 [Developer_version](https://crashmet.github.io/Test_for_DeNet/src/dev_version.html)
