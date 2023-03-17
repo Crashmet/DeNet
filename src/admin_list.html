@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./components/select/select.css" />
+    <link rel="stylesheet" href="./components/table/table.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Developer Version</title>
+  </head>
+  <body>
+    <header class="header blur">
+      <div class="header__container">
+        <login class="header__nav">
+          <img class="header__logo_left" src="./img/LOGO.svg" alt="logotype" />
+
+          <ul class="header__list_right">
+            <li class="header__item header-item__search">
+              <button class="header-item__search_btn">
+                <svg
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.99805 8C1.99805 4.41015 4.9082 1.5 8.49805 1.5C12.0879 1.5 14.998 4.41015 14.998 8C14.998 9.78552 14.2799 11.4007 13.1136 12.5767L13.1665 12.6292L13.1136 12.5767C12.6774 13.0166 12.1792 13.3943 11.6337 13.6954C10.7052 14.2079 9.63773 14.5 8.49805 14.5C4.9082 14.5 1.99805 11.5899 1.99805 8ZM14.145 12.9359C15.2991 11.6167 15.998 9.89025 15.998 8C15.998 3.85787 12.6402 0.5 8.49805 0.5C4.35592 0.5 0.998047 3.85787 0.998047 8C0.998047 12.1421 4.35592 15.5 8.49805 15.5C9.81095 15.5 11.0442 15.163 12.1169 14.5709L11.8753 14.1331L12.1169 14.5709C12.591 14.3092 13.0337 13.9976 13.4382 13.6433L16.1484 16.3536C16.3437 16.5488 16.6602 16.5488 16.8555 16.3536C17.0508 16.1583 17.0508 15.8417 16.8555 15.6464L14.145 12.9359Z"
+                    fill="#232323"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="header__item header-item__wrapper wrapper">
+              <div class="select_wrap">
+                <ul class="default_option">
+                  <li>
+                    <div class="option">
+                      <div class="icon icon_polygon"></div>
+                      <p>Polygon</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="select_ul">
+                  <li>
+                    <div class="option">
+                      <div class="icon icon_polygon"></div>
+                      <p>Polygon</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="option">
+                      <div class="icon"></div>
+                      <p>DeNet Chat</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="option">
+                      <div class="icon"></div>
+                      <p>DeNet NFT</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="option">
+                      <div class="icon"></div>
+                      <p>DeNet Storage</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="option">
+                      <div class="icon"></div>
+                      <p>DeNet Desk</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__item header-item__data">
+              <div class="header-item__data_used">
+                Used: <b class="header-data__value">0.4 GB</b>
+              </div>
+              <div class="header-item__data_icon"></div>
+              <div class="header-item__data_balance">
+                Balance: <b class="header-data__value">0.6 TBY</b>
+              </div>
+              <button class="header-item__data_add">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 2C7.5 1.17157 8.17157 0.5 9 0.5C9.82843 0.5 10.5 1.17157 10.5 2V17C10.5 17.8284 9.82843 18.5 9 18.5C8.17157 18.5 7.5 17.8284 7.5 17V2Z"
+                    fill="#FFD600"
+                  />
+                  <path
+                    d="M16.5 8C17.3284 8 18 8.67157 18 9.5C18 10.3284 17.3284 11 16.5 11L1.5 11C0.671573 11 -3.62117e-08 10.3284 0 9.5C3.62117e-08 8.67157 0.671573 8 1.5 8L16.5 8Z"
+                    fill="#FFD600"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="header__item header-item__logo">
+              <a href="#">
+                <svg
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="20" cy="20.5" r="20" fill="#EBEBEB" />
+                  <g filter="url(#filter0_d_1_2374)">
+                    <mask
+                      id="mask0_1_2374"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="3"
+                      y="4"
+                      width="34"
+                      height="33"
+                    >
+                      <circle cx="20" cy="20.5" r="16.25" fill="#F2F2F2" />
+                    </mask>
+                    <g mask="url(#mask0_1_2374)">
+                      <path
+                        d="M23.3752 33.0567C23.3752 41.5234 16.5117 48.3869 8.04503 48.3869C-0.421598 48.3869 -7.28516 41.5234 -7.28516 33.0567C-7.28516 24.5901 -0.421598 17.7266 8.04503 17.7266C16.5117 17.7266 23.3752 24.5901 23.3752 33.0567Z"
+                        fill="#232323"
+                      />
+                      <path
+                        d="M40.6994 10.2052C40.6994 18.6718 33.8359 25.5354 25.3692 25.5354C16.9026 25.5354 10.0391 18.6718 10.0391 10.2052C10.0391 1.73856 16.9026 -5.125 25.3692 -5.125C33.8359 -5.125 40.6994 1.73856 40.6994 10.2052Z"
+                        fill="#232323"
+                      />
+                      <path
+                        d="M28.6321 17.5309C28.6321 28.1988 19.984 36.8469 9.31604 36.8469C-1.35192 36.8469 -10 28.1988 -10 17.5309C-10 6.86293 -1.35192 -1.78516 9.31604 -1.78516C19.984 -1.78516 28.6321 6.86293 28.6321 17.5309Z"
+                        fill="#FFD600"
+                      />
+                      <path
+                        d="M11.665 19.2598L39.61 0.377178L56.7759 25.7816L28.831 44.6642L11.665 19.2598Z"
+                        fill="#232323"
+                      />
+                      <path
+                        d="M31.7061 21.4922C31.7061 25.082 28.7959 27.9922 25.2061 27.9922C21.6162 27.9922 18.7061 25.082 18.7061 21.4922C18.7061 17.9023 21.6162 14.9922 25.2061 14.9922C28.7959 14.9922 31.7061 17.9023 31.7061 21.4922Z"
+                        fill="white"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_1_2374"
+                      x="0.75"
+                      y="1.25"
+                      width="38.5"
+                      height="38.5"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="1.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_1_2374"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_1_2374"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </login>
+      </div>
+    </header>
+
+    <main class="main blur">
+      <section class="nav">
+        <div class="container nav__container">
+          <nav class="nav__row">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_bugs hvr-underline-reveal">
+                BUGS
+              </li>
+              <li class="nav__item nav__item_suggestions hvr-underline-reveal">
+                suggestions
+              </li>
+              <li class="nav__item nav__item_tracker">
+                <span class="nav__item_tracker-icon"></span>
+                BUG TRACKER
+              </li>
+            </ul>
+
+            <ul class="login__list">
+              <li class="login__item login__item_q">?</li>
+              <li class="login__item login__item_address">0xa0d6....3EC6</li>
+              <li class="login__item login__item_out">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
+                    stroke="#676767"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.333 14.1654L17.4997 9.9987L13.333 5.83203"
+                    stroke="#676767"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 10H7.5"
+                    stroke="#676767"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="add-bug">
+        <div class="container add-bug__container">
+          <h4 class="add-bug__title_left">BUG LIST</h4>
+          <button class="add-bug__btn_right main-btn">+ New bug</button>
+        </div>
+      </section>
+
+      <section class="bug-list">
+        <div class="bug-list__container container">
+          <div id="wrapper-dev" class="blur"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="admin-list">
+      <button class="admin-close-btn">
+        <svg
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.641389 2.92264C0.28716 2.56841 0.287159 1.99409 0.641388 1.63986C0.995617 1.28563 1.56993 1.28563 1.92416 1.63986L15.3584 15.0742C15.7127 15.4284 15.7127 16.0027 15.3584 16.3569C15.0042 16.7112 14.4299 16.7112 14.0757 16.3569L0.641389 2.92264Z"
+            fill="#ACADB5"
+          />
+          <path
+            d="M14.0774 1.64139C14.4316 1.28716 15.0059 1.28716 15.3601 1.64139C15.7144 1.99562 15.7144 2.56994 15.3601 2.92417L1.92586 16.3585C1.57163 16.7127 0.997315 16.7127 0.643086 16.3585C0.288857 16.0042 0.288857 15.4299 0.643086 15.0757L14.0774 1.64139Z"
+            fill="#ACADB5"
+          />
+        </svg>
+      </button>
+      <div class="admin-list__container">
+        <h3 class="admin-list__title">
+          Button not working!Button not working!Button not working!
+        </h3>
+        <div class="admin-data">
+          <ul class="admin-data__data">
+            <li class="admin-data__item">
+              Address: <b class="admin-data__value">d85sa...d85sa</b>
+            </li>
+            <li class="admin-data__item">
+              App: <b class="admin-data__value">DeNet NFT</b>
+            </li>
+
+            <li class="admin-data__item">
+              Created: <b class="admin-data__value">01/29/2022</b>
+            </li>
+            <li class="admin-data__item">
+              Deadline: <b class="admin-data__value">01/29/2022</b>
+            </li>
+          </ul>
+          <button class="admin-data__btn main-btn">In progress</button>
+        </div>
+        <div class="admin-btn-groupe">
+          <button class="btn-groupe__btn main-btn">add bug to redmine</button>
+          <form class="btn-groupe__form" caction="">
+            <input
+              class="btn-groupe__input"
+              type="text"
+              placeholder="Link from redmine"
+            />
+            <button class="btn-groupe__btn btn-groupe__btn_inpput main-btn">
+              add link
+            </button>
+          </form>
+        </div>
+        <p class="admin-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Potenti
+          tincidunt aliquet nisl netus cras id est arcu. Fames orci habitasse
+          mauris eu massa gravida amet. Eu morbi enim eu nec. Fringilla vitae
+          fermentum sit tincidunt scelerisque nisl fermentum, commodo viverra.
+          Varius eu amet enim fermentum quis morbi quisque fringilla in. Egestas
+          dignissim fringilla sapien augue viverra. At pulvinar lacus enim in
+          volutpat integer tortor. Felis, nibh odio fermentum nisi, sed.
+          Vulputate scelerisque ultrices non aliquam et nulla etiam pretium
+          urna. Turpis nam purus vulputate at congue. Id amet ac mauris egestas
+          in ipsum id.
+        </p>
+        <ul class="admin-files__list">
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+          <li class="admin-files__item">
+            image_2022-02-17_10-17-38.PNG
+            <span class="admin-files__item_weight">(711 KB)</span>
+          </li>
+        </ul>
+        <div class="admin-form">
+          <form class="admin-form__form btn-groupe__form" caction="">
+            <input
+              class="admin-form__input btn-groupe__input"
+              type="text"
+              placeholder="Thanks for the suggestions keep the bounty
+              "
+            />
+            <button
+              class="admin-form__btn_union btn-groupe__btn btn-groupe__btn_inpput main-btn"
+            >
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.9987 0.46449C20.9905 0.348609 20.9421 0.23504 20.8536 0.146447C20.7103 0.0032159 20.5018 -0.0349507 20.3238 0.0319467L0.334827 7.02808C0.141327 7.09581 0.00877504 7.27479 0.000418142 7.47963C-0.00793876 7.68447 0.109593 7.87366 0.296933 7.95692L9.1212 11.8788L13.0431 20.7031C13.1264 20.8904 13.3155 21.008 13.5204 20.9996C13.7252 20.9912 13.9042 20.8587 13.9719 20.6652L20.9684 0.67535C20.9937 0.607691 21.0038 0.535654 20.9987 0.46449ZM18.5971 1.69576L1.85554 7.55532L9.38926 10.9036L18.5971 1.69576ZM10.0964 11.6107L19.3043 2.40283L13.4447 19.1445L10.0964 11.6107Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form>
+          <button class="admin-form__btn delete-btn login__item">
+            <svg
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 4.08262H3.23404M21 4.08262H18.766M18.766 4.08262L18.0643 21.0413C18.0421 21.5771 17.6013 22 17.0651 22H4.94117C4.40511 22 3.9644 21.5773 3.94204 21.0417L3.23404 4.08262M18.766 4.08262L14.1948 4.08187M3.23404 4.08262H7.81183M7.81183 4.08262V2C7.81183 1.44771 8.25955 1 8.81183 1H13.1954C13.7478 1 14.1955 1.44788 14.1954 2.00027L14.1948 4.08187M7.81183 4.08262L14.1948 4.08187"
+                stroke="#676767"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11 8V18M14.5 8V18M7.5 8V18"
+                stroke="#676767"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button class="admin-form__btn admin-form__btn_status">Status</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script src="./components/select/select.js"></script>
+  <script src="./components/table/devTable.js"></script>
+</html>
