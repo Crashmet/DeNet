@@ -1,9 +1,9 @@
 # Тестовая работа DaNet
-[Users_version](https://crashmet.github.io/Test_for_DeNet/src/users_version.html)
+[Users_version](https://crashmet.github.io/DeNet/src/users_version.html)
 
-[Developer_version](https://crashmet.github.io/Test_for_DeNet/src/dev_version.html)
+[Developer_version](https://crashmet.github.io/DeNet/src/dev_version.html)
 
-[Admin_list](https://crashmet.github.io/Test_for_DeNet/src/admin_list.html)
+[Admin_list](https://crashmet.github.io/DeNet/src/admin_list.html)
 
 **Задание**
 - Верстка интерфейса. 
